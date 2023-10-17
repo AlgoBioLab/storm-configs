@@ -405,8 +405,8 @@
                 <pixel_clock type="int">25</pixel_clock>
                 <sigma type="float">3.0</sigma>
                 <uc480_dll type="string">c:/windows/system32/uc480_64.dll</uc480_dll>
-                <x_width type="int">175</x_width>
-                <y_width type="int">75</y_width>
+                <x_width type="int">40</x_width>
+                <y_width type="int">40</y_width>
                 <units_to_microns type="float">-0.57</units_to_microns>
             </configuration>
         </thorlabs_camera>
