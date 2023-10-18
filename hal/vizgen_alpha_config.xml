@@ -383,34 +383,66 @@
             </configuration>
         </stage>
 
-        <!-- Thorlabs UC480 camera for the focus lock -->
-
-        <thorlabs_camera>
-            <class_name type="string">UC480Camera</class_name>
-            <module_name type="string">storm_control.sc_hardware.thorlabs.scientificCameraModule</module_name>
+        <!-- Test Camera Emulator -->
+        <camera_qpd_none>
+            <class_name type="string">CameraNone</class_name>
+            <module_name type="string">storm_control.hal4000.qpdEmulation.cameraInterface</module_name>
             <configuration>
-                <parameters>
-                    <offset_has_center_bar type="boolean">True</offset_has_center_bar>
-                    <offset_minimum type="float">1.66</offset_minimum>
-                    <offset_maximum type="float">30.35</offset_maximum>
-                    <offset_warning_high type="float">25.34</offset_warning_high>
-                    <offset_warning_low type="float">6.66</offset_warning_low>
-                    <sum_maximum type="float">300000</sum_maximum>
-                    <sum_minimum type="float">32129</sum_minimum>
-                    <sum_warning_low type="float">43838</sum_warning_low>
-                </parameters>
+                <sigma type="int">3</sigma>
                 <background type="int">0</background>
-                <camera_id type="int">1</camera_id>
-                <ini_file type="string">uc480_settings.ini</ini_file>
-                <offset_file type="string">C:/Users/RPI/Desktop/AlgoBioLab/storm-configs/cam/cam_offsets_vizgenalpha.txt</offset_file>
-                <pixel_clock type="int">25</pixel_clock>
-                <sigma type="float">3.0</sigma>
-                <uc480_dll type="string">c:/windows/system32/uc480_64.dll</uc480_dll>
-                <x_width type="int">40</x_width>
-                <y_width type="int">40</y_width>
-                <units_to_microns type="float">-0.57</units_to_microns>
+                <zero_dist type="int">0</zero_dist>
+                <allow_single_fits type="boolean">false</allow_single_fits>
             </configuration>
-        </thorlabs_camera>
+        </camera_qpd_none>
+
+        <!-- ThorLabs Scientific Camera for QPD Emulation -->
+        <thorlabs_qpd>
+            <class_name type="string">ScientificCamera</class_name>
+            <module_name type="string">storm_control.sc_hardware.thorlabs.scientificCamera</module_name>
+            <configuration>
+                <dll_path type="string">C:/Users/RPI/Desktop/AlgoBioLab/ThorLabsDLL</dll_path>
+                <camera_id type="int">0</camera_id>
+                <exposure_time_us type="int">11000</exposure_time_us>
+                <timeout_ms type="int">1000</timeout_ms>
+            </configuration>
+        </thorlabs_qpd>
+
+        <scipy_fit>
+            <class_name type="string">CameraQPDScipyFit</class_name>
+            <module_name type="string">storm_control.hal4000.qpdEmulation.cameraQPDFit</module_name>
+            <configuration>
+                <sigma type="int">2</sigma>
+                <background type="int">0</background>
+                <zero_dist type="int">0</zero_dist>
+                <allow_single_fits type="boolean">false</allow_single_fits>
+            </configuration>
+        </scipy_fit>
+
+        <qpd>
+            <class_name type="string">CameraQPD</class_name>
+            <module_name type="string">storm_control.hal4000.qpdEmulation.cameraQPD</module_name>
+            <configuration>
+                <camera type="string">thorlabs_qpd</camera>
+                <fit type="string">scipy_fit</fit>
+                <aoi_width type="int">200</aoi_width>
+                <aoi_height type="int">200</aoi_height>
+                <offset_file type="string">C:/Users/RPI/Desktop/AlgoBioLab/storm-configs/cam/cam_offsets_vizgenalpha.txt</offset_file>
+                <units_to_microns type="float">10</units_to_microns>
+                <reps type="int">4</reps>
+                <parameters>
+                    <max_voltage type="float">10.0</max_voltage>
+                    <min_voltage type="float">-10.0</min_voltage>
+                    <offset_has_center_bar type="boolean">True</offset_has_center_bar>
+                    <offset_maximum type="float">0.6</offset_maximum>
+                    <offset_minimum type="float">-0.6</offset_minimum>
+                    <offset_warning_high type="float">0.5</offset_warning_high>
+                    <offset_warning_low type="float">-0.5</offset_warning_low>
+                    <sum_maximum type="float">1000.0</sum_maximum>
+                    <sum_minimum type="float">0.0</sum_minimum>
+                    <sum_warning_low type="float">100</sum_warning_low>
+                </parameters>
+            </configuration>
+        </qpd>
 
         <!-- Focus lock control GUI. -->
         <focuslock>
@@ -422,7 +454,7 @@
                 <lock_modes type="string">
                     HardwareZScanLockMode, CalibrationLockMode
                 </lock_modes>
-                <qpd type="string">thorlabs_camera</qpd>
+                <qpd type="string">qpd</qpd>
                 <z_stage type="string">mcl_zstage</z_stage>
                 <parameters>
                     <find_sum>
