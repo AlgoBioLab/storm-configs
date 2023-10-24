@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <settings>
   <!-- Valve parameters -->
-  <valve_type type="string">Simulated</valve_type>
-  <valves_com_port type="string">COM2</valves_com_port><!-- COM port of serial connection to valves -->
+  <valve_com_ports>
+	  <!-- Valves must be listed here in commands/protocol order, i.e. the valve referred to by
+		  valve_ID "1" in the commands_file should be listed first, and so on. -->
+	  <valve1_com_port type="string">COM7</valve1_com_port>
+	  <valve2_com_port type="string">COM8</valve2_com_port>
+	  <valve3_com_port type="string">COM9</valve3_com_port>
+  </valve_com_ports>
+  <!--<valves_com_port type="string">COM2</valves_com_port>-->	<!-- COM port of serial connection to valves -->
+  <valve_class type="string">valves.elveflow_mux</valve_class>
   <num_simulated_valves type="int">3</num_simulated_valves><!-- Number of valves to simulate (Defaults to 0) -->
 
   <!-- Pump parameters -->
