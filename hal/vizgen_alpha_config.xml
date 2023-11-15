@@ -365,7 +365,7 @@
                     <maximum type="float">200.0</maximum>
                     <minimum type="float">0.0</minimum>
                     <warning_high type="float">190.0</warning_high>
-                    <warning_low type="float">10.0</warning_low>
+                    <warning_low type="float">0.0</warning_low>
                 </parameters>
                 <ao_fn_name type="string">daq.mcl.ao_task</ao_fn_name>
                 <microns_to_volts type="float">0.05</microns_to_volts>
@@ -398,7 +398,7 @@
             <class_name type="string">CameraQPDScipyFit</class_name>
             <module_name type="string">storm_control.hal4000.qpdEmulation.cameraQPDFit</module_name>
             <configuration>
-                <sigma type="int">20</sigma>
+                <sigma type="float">3.0</sigma>
                 <background type="int">0</background>
                 <zero_dist type="int">0</zero_dist>
                 <allow_single_fits type="boolean">false</allow_single_fits>
@@ -411,10 +411,10 @@
             <configuration>
                 <camera type="string">thorlabs_qpd</camera>
                 <fit type="string">scipy_fit</fit>
-                <aoi_width type="int">400</aoi_width>
-                <aoi_height type="int">400</aoi_height>
+                <aoi_width type="int">80</aoi_width>
+                <aoi_height type="int">80</aoi_height>
                 <offset_file type="string">C:/Users/RPI/Desktop/AlgoBioLab/storm-configs/cam/cam_offsets_vizgenalpha.txt</offset_file>
-                <units_to_microns type="float">0.009</units_to_microns>
+                <units_to_microns type="float">0.09</units_to_microns>
                 <reps type="int">4</reps>
                 <parameters>
                     <offset_has_center_bar type="boolean">True</offset_has_center_bar>
