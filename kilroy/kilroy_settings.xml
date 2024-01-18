@@ -17,7 +17,7 @@
   <pump_class type="string">pumps.elveflow_ob1</pump_class><!-- Control class for pump -->
   <pump_com_port type="string">COM3</pump_com_port><!-- COM port of serial connection to pump -->
   <pump_ID type="int">30</pump_ID><!-- ID of Pump -->
-  <simulate_pump type="boolean">False</simulate_pump><!-- Simulate pump? (Defaults to False) -->
+  <simulate_pump type="boolean">True</simulate_pump><!-- Simulate pump? (Defaults to False) -->
   <flip_flow_direction type="boolean">False</flip_flow_direction><!-- Flip the direction defined as forward? -->
   <speed_units type="string">microL/min</speed_units><!-- Pump speed units -->
   <max_speed type="float">100000</max_speed><!-- Max pump speed, in speed_units -->
