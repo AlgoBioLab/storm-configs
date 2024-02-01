@@ -10,7 +10,7 @@
   </valve_com_ports>
   <!--<valves_com_port type="string">COM2</valves_com_port>-->	<!-- COM port of serial connection to valves -->
   <valve_class type="string">valves.elveflow_mux</valve_class>
-  <num_simulated_valves type="int">3</num_simulated_valves><!-- Number of valves to simulate (Defaults to 0) -->
+  <num_simulated_valves type="int">0</num_simulated_valves><!-- Number of valves to simulate (Defaults to 0) -->
 
   <!-- Pump parameters -->
   <pump_type type="string">pressure</pump_type>
