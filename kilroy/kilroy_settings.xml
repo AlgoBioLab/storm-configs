@@ -4,9 +4,9 @@
   <valve_com_ports>
 	  <!-- Valves must be listed here in commands/protocol order, i.e. the valve referred to by
 		  valve_ID "1" in the commands_file should be listed first, and so on. -->
-	  <valve1_com_port type="string">COM7</valve1_com_port>
-	  <valve2_com_port type="string">COM8</valve2_com_port>
-	  <valve3_com_port type="string">COM9</valve3_com_port>
+	  <valve1_com_port type="string">COM8</valve1_com_port>
+	  <valve2_com_port type="string">COM9</valve2_com_port>
+	  <valve3_com_port type="string">COM10</valve3_com_port>
   </valve_com_ports>
   <!--<valves_com_port type="string">COM2</valves_com_port>-->	<!-- COM port of serial connection to valves -->
   <valve_class type="string">valves.elveflow_mux</valve_class>
@@ -15,7 +15,7 @@
   <!-- Pump parameters -->
   <pump_type type="string">pressure</pump_type>
   <pump_class type="string">pumps.elveflow_ob1</pump_class><!-- Control class for pump -->
-  <pump_com_port type="string">COM3</pump_com_port><!-- COM port of serial connection to pump -->
+  <pump_com_port type="string">COM7</pump_com_port><!-- COM port of serial connection to pump -->
   <pump_ID type="int">30</pump_ID><!-- ID of Pump -->
   <simulate_pump type="boolean">False</simulate_pump><!-- Simulate pump? (Defaults to False) -->
   <flip_flow_direction type="boolean">False</flip_flow_direction><!-- Flip the direction defined as forward? -->
