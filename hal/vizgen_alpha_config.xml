@@ -2,7 +2,7 @@
 <config>
 
     <!-- The starting directory. -->
-    <directory type="directory">C:\Users\RPI\Desktop\AlgoBioLab\experiments\experiment_3\data</directory>
+    <directory type="directory">C:\Users\RPI\Desktop\AlgoBioLab\experiments\experiment_4\data</directory>
 
     <!-- The setup name -->
     <setup_name type="string">VizgenAlpha</setup_name>
@@ -347,7 +347,7 @@
             <configuration>
                 <baudrate type="int">115200</baudrate>
                 <port type="string">COM4</port>
-                <velocity type="float">750000</velocity>
+                <velocity type="float">75000</velocity>
                 <x_max type="float">130000</x_max>
                 <y_max type="float">100000</y_max>
                 <unit_to_um type="float">0.001</unit_to_um>
