@@ -4,7 +4,7 @@
   <frames>19</frames>
     <event>
 		  <channel>0</channel>
-		  <power>0</power>
+		  <power>0.3</power>
 		  <on>0.0</on>
 		  <off>7.0</off>
 		  <color>255,255,255</color>
@@ -25,7 +25,7 @@
 	</event>
     <event>
 		  <channel>3</channel>
-		  <power>0.328</power>
+		  <power>0</power>
 		  <on>17.0</on>
 		  <off>18.0</off>
 		  <color>255,255,255</color>

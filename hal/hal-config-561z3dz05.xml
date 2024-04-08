@@ -34,7 +34,7 @@
     <want_big_endian type="boolean">False</want_big_endian>
   </film>
   <illumination is_new="False">
-	  <shutters type="string">C:/Users/RPI/Desktop/AlgoBioLab/storm-configs/cam/shutter-config-750z7-647z7-560z3-488z1-405z1.xml</shutters>
+	  <shutters type="string">C:/Users/RPI/Desktop/AlgoBioLab/storm-configs/cam/shutter-config-561z3.xml</shutters>
   </illumination>
 
   <!-- focus lock settings -->
