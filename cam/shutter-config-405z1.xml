@@ -11,21 +11,21 @@
 	</event>
     <event>
 		  <channel>1</channel>
-		  <power>0</power>
+		  <power>0.8</power>
 		  <on>7.0</on>
 		  <off>14.0</off>
 		  <color>255,255,255</color>
 	</event>
     <event>
 		  <channel>2</channel>
-		  <power>0</power>
+		  <power>0.8</power>
 		  <on>14.0</on>
 		  <off>17.0</off>
 		  <color>255,255,255</color>
 	</event>
     <event>
 		  <channel>3</channel>
-		  <power>0</power>
+		  <power>0.1</power>
 		  <on>17.0</on>
 		  <off>18.0</off>
 		  <color>255,255,255</color>
