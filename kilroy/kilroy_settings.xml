@@ -27,7 +27,7 @@
   <verbose type="boolean">True</verbose>
   <serial_verbose type="boolean">True</serial_verbose>  <!-- display serial commands? -->
   <tcp_port type="int">9500</tcp_port> <!-- TCP/IP port for local communication with Dave -->
-  <protocols_file type = "">default_config.xml</protocols_file><!-- Location of default protocol -->
-  <commands_file type = "">default_config.xml</commands_file><!-- Location of default commands -->
+  <protocols_file type = "">test_config.xml</protocols_file><!-- Location of default protocol -->
+  <commands_file type = "">test_config.xml</commands_file><!-- Location of default commands -->
 
 </settings>
