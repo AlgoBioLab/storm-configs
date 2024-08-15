@@ -412,8 +412,8 @@
             <configuration>
                 <camera type="string">thorlabs_qpd</camera>
                 <fit type="string">scipy_fit</fit>
-                <aoi_width type="int">80</aoi_width>
-                <aoi_height type="int">80</aoi_height>
+                <aoi_width type="int">100</aoi_width>
+                <aoi_height type="int">100</aoi_height>
                 <offset_file type="string">C:/Users/RPI/Desktop/AlgoBioLab/storm-configs/cam/cam_offsets_vizgenalpha.txt</offset_file>
                 <units_to_microns type="float">-0.01</units_to_microns>
                 <reps type="int">4</reps>
