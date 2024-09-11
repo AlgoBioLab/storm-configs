@@ -21,7 +21,7 @@
   <flip_flow_direction type="boolean">False</flip_flow_direction><!-- Flip the direction defined as forward? -->
   <speed_units type="string">microL/min</speed_units><!-- Pump speed units -->
   <max_speed type="float">100000</max_speed><!-- Max pump speed, in speed_units -->
-  <min_speed type="float">50</min_speed><!-- Min pump speed, in speed_units -->
+  <min_speed type="float">0</min_speed><!-- Min pump speed, in speed_units -->
 
   <!-- General Kilroy parameters -->
   <verbose type="boolean">True</verbose>
