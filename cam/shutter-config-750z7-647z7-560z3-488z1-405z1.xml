@@ -4,35 +4,35 @@
   <frames>19</frames>
     <event>
 		  <channel>0</channel>
-		  <power>1.0</power>
+		  <power>0.05</power>
 		  <on>0.0</on>
 		  <off>7.0</off>
 		  <color>255,255,255</color>
 	</event>
     <event>
 		  <channel>1</channel>
-		  <power>1.0</power>
+		  <power>0.05</power>
 		  <on>7.0</on>
 		  <off>14.0</off>
 		  <color>255,255,255</color>
 	</event>
     <event>
 		  <channel>2</channel>
-		  <power>1.0</power>
+		  <power>0.05</power>
 		  <on>14.0</on>
 		  <off>17.0</off>
 		  <color>255,255,255</color>
 	</event>
     <event>
 		  <channel>3</channel>
-		  <power>1.0</power>
+		  <power>0.05</power>
 		  <on>17.0</on>
 		  <off>18.0</off>
 		  <color>255,255,255</color>
 	</event>
     <event>
 		  <channel>4</channel>
-		  <power>1.0</power>
+		  <power>0.05</power>
 		  <on>18.0</on>
 		  <off>19.0</off>
 		  <color>255,255,255</color>
